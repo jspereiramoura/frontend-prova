@@ -1,0 +1,14 @@
+{
+    "name": "frontend-studio-sol",
+    "version": "1.0.0",
+    "description": "Prova prática de frontend do StudioSol",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "jquery": "^3.6.0"
+    }
+}

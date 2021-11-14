@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@500&display=swap');
+body {
+    overflow: hidden;
+}
+
+main {
+    margin: 40px auto;
+    /* transform: translate(0, -50%); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    border-radius: 4px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#btn_enviar {
+    position: absolute;
+    width: 70px;
+    height: 42px;
+    background: linear-gradient(180deg, #EF6C00 0%, #C0661C 100%);
+}
+#btn_nova_partida {
+    display: none;
+    margin: 30px auto 80px;
+    outline: none;
+    width: 130px;
+    height: 42px;
+    border-radius: 4px;
+    align-items: center;
+    background: linear-gradient(180deg, #434854 0%, #9E9E9E 100%) !important;
+}
+#btn_nova_partida span{
+    width: 88px;
+    height: 15px;
+}
+#user_resp {
+    margin-right: 11px;
+    width: 217px;
+    height: 42px;
+    padding-left: 12px;
+    color: #222222;
+    border: 1px solid #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+}
+
+#user_resp::placeholder {
+    color: #9E9E9E;
+}
+
+.commands {
+    width: 298px;
+    height: 42px;
+    font-family: Roboto, sans-serif;
+}
+
+.title {
+    width: 423px;
+    height: 56px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1px;
+    background: linear-gradient(180deg, #EF6C00 0%, #DB6300 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+}
+#mensagem {
+    font-size: 16px;
+    margin-bottom: 35px;
+    display: none;
+    font-family: Montserrat, sans-serif;
+    color: #FF6600;
+    letter-spacing: -1px;    
+}
+
+hr.separator {
+    margin-top: 0px;
+    width: 255px;
+    border: 0;
+    height: 1px;
+    background: #CFCFCF;
+}
+
+#display {
+    height: 386px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seg svg {
+    width: 75px;
+    height: 135px;
+    padding: 6px;
+}
+
+.disabled_btn {
+    cursor: default !important;
+    background: #DDDDDD !important;
+}
+
+.disabled_input {
+    background: #f5f5f5 !important;
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        width: 100%;
+    }
+    .title {
+        font-size: 24px;
+    }
+    hr.separator {
+        width: 205px;
+    }
+    /* svg path {
+        width: 10px;
+        height: 10px;
+    } */
+    #seg svg {
+        width: 50px;
+        height: 100px;
+        padding: 4.5px;
+    }
+    #btn_new_partida {
+        margin: 50px auto 70px;
+        width: 1300px;
+        background: linear-gradient(180deg, #434854 0%, #9E9E9E 100%);
+    }
+}

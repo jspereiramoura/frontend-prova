@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Prático FrontEnd Studio Sol</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="title">QUAL É O NÚMERO?</h1>
+            <hr class="separator">
+        </div>
+        <div id="display">
+            <h2 id="mensagem"></h2>
+            <div id="seg">
+
+            </div>
+            <button id="btn_nova_partida" >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="refresh_24px">
+                    <path id="icon/navigation/refresh_24px" d="M16.2364 7.7625C15.1482 6.675 13.6548 6 11.9962 6C8.67917 6 6 8.685 6 12C6 15.315 8.67917 18 11.9962 18C14.7955 18 17.1295 16.0875 17.7974 13.5H16.2364C15.621 15.2475 13.955 16.5 11.9962 16.5C9.51219 16.5 7.49343 14.4825 7.49343 12C7.49343 9.5175 9.51219 7.5 11.9962 7.5C13.242 7.5 14.3527 8.0175 15.1632 8.835L12.7467 11.25H18V6L16.2364 7.7625Z" fill="white"/>
+                    </g>
+                </svg>
+                <span>Nova partida</span>
+            </button>
+        </div>
+        <div class="commands">
+            <input type="text" name="user_resp" id="user_resp" placeholder="Digite o palpite" >
+            <button id="btn_enviar" >Enviar</button>
+        </div>
+    </main>
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+
+</html>
