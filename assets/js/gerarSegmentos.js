@@ -1,6 +1,6 @@
 import TempEngine from "./template-engine.js";
 
-const templatePath = "/templates/segmentos.html";
+const templatePath = "./templates/segmentos.html";
 
 export default function gerarSegmentos(number, cor) {
     cor = setColor(cor);
