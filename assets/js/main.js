@@ -7,8 +7,14 @@ $(window).ready(callGerarSegmentos(0, 'normal'), gerarPartida())
 
 async function callGerarSegmentos(number, cor) {
     $("#seg").empty();
+    input.val('');
     $("#seg").append(await gerarSegmentos(number, cor));
 }
+
+$(document).on('keypress', (key) => {
+    if (key.which == 13)
+        $('#btn_enviar').click();
+});
 
 $("#btn_nova_partida").on('click', () => {
     desbloquearInputs();
@@ -16,6 +22,7 @@ $("#btn_nova_partida").on('click', () => {
 });
 
 $('#btn_enviar').on('click', () => {
+    if (input.val() == '') return;
     if (localStorage.getItem('number') == input.val()) {
         bloquearInputs(input.val(), 'success');
         gerarMensagem('Você acertou!!!!', '#32BF00');
